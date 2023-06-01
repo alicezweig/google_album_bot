@@ -50,7 +50,6 @@ async def start(update, context):
 
 
 if __name__ == '__main__':
-    photos = get_pics_urls_list()
     application = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
     start_handler = CommandHandler('start', start)
     send_photo_handler = CommandHandler('send_photo', send_photo)
